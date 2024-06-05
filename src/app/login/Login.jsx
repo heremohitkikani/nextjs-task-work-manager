@@ -4,7 +4,8 @@ import { login } from "@/services/userService";
 import { useRouter } from "next/navigation";
 import React, { useContext, useState } from "react";
 import { toast } from "react-toastify";
-
+import signUpBanner from "../../assets/singup.svg";
+import Image from "next/image";
 const Login = () => {
   const router = useRouter();
   const context = useContext(UserContext);
@@ -42,24 +43,24 @@ const Login = () => {
   };
 
   return (
-    <div className="grid grid-cols-12">
-      <div className="col-span-4 col-start-5 ">
-        <div className="py-5"></div>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900">
+      <div className="w-full max-w-md mx-auto bg-gray-800 rounded-lg shadow-lg px-8 py-12">
+        <h1 className="text-3xl text-center text-white mb-8">Login Here</h1>
+        <Image src={signUpBanner} alt="Signup banner" className="w-32 mx-auto sm:w-40" />
 
-        <h1 className="text-3xl text-center">Login Here </h1>
-
+  
         <form action="#!" onSubmit={loginFormSubmitted}>
-          <div className="mt-3">
+          <div className="mb-4">
             <label
               htmlFor="user_email"
-              className="block text-sm font-medium mb-2 ps-2"
+              className="block text-sm font-medium text-gray-300 mb-2"
             >
               Email
             </label>
             <input
               type="email"
-              className="w-full p-3 rounded-2xl bg-gray-800 focus:ring-gray-400-100 border border-gray-800"
-              placeholder="Enter here"
+              className="w-full p-3 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-600"
+              placeholder="Enter your email"
               id="user_email"
               name="user_email"
               onChange={(event) => {
@@ -71,18 +72,18 @@ const Login = () => {
               value={loginData.email}
             />
           </div>
-          {/* password */}
-          <div className="mt-3">
+  
+          <div className="mb-6">
             <label
               htmlFor="user_password"
-              className="block text-sm font-medium mb-2 ps-2"
+              className="block text-sm font-medium text-gray-300 mb-2"
             >
               Password
             </label>
             <input
               type="password"
-              className="w-full p-3 rounded-2xl bg-gray-800 focus:ring-gray-400-100 border border-gray-800"
-              placeholder="Enter here"
+              className="w-full p-3 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-600"
+              placeholder="Enter your password"
               id="user_password"
               onChange={(event) => {
                 setLoginData({
@@ -93,24 +94,23 @@ const Login = () => {
               value={loginData.password}
             />
           </div>
-
-          <div className="mt-3 text-center">
+  
+          <div className="flex justify-between items-center mb-6">
             <button
               type="submit"
-              className="px-3 py-2 bg-green-600  rounded hover:bg-green-400"
+              className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300"
             >
               Login
             </button>
             <button
               type="button"
-              className="px-3 py-2 bg-orange-600 ms-3 rounded hover:bg-orange-400"
+              className="px-4 py-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors duration-300"
             >
               Reset
             </button>
           </div>
         </form>
       </div>
-      {/* {JSON.stringify(loginData)} */}
     </div>
   );
 };
