@@ -84,7 +84,7 @@ const CustomNavbar = () => {
                 <>
                   <li>
                     <Link
-                      href="/"
+                      href="/home"
                       className="hover:text-blue-200 font-bold"
                       onClick={() => setIsMenuOpen(false)}
                     >

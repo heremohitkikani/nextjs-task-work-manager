@@ -2,6 +2,7 @@
 import React from "react";
 import imageBanner from "../../assets/singup.svg";
 import Image from "next/image";
+import Link from "next/link";
 const ActionSection = () => {
   return (
     <div className="relative bg-blue-500 text-white py-20">
@@ -13,15 +14,14 @@ const ActionSection = () => {
         <p className="text-xl text-center mb-8">
           Start managing your tasks efficiently with our task manager app.
         </p>
-        <button
-          className="bg-white text-blue-500 py-3 px-6 rounded-md shadow-md hover:shadow-lg transition duration-300"
+       <Link href="/add-task"> <button
+          className="relative bg-white text-blue-500 px-4 py-2 md:px-6 md:py-3 rounded-md shadow-md transition duration-300 hover:bg-blue-500 hover:text-white font-poppins"
           onClick={() => {
-            // Add your action button click event handler logic here
-            console.log("Get Started button clicked!");
+            console.log("Action button clicked!");
           }}
         >
           Get Started
-        </button>
+        </button></Link>
       </div>
       <div className="absolute top-0 left-0 w-full h-full z-0 opacity-30">
         <Image

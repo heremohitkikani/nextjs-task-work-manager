@@ -1,0 +1,31 @@
+/* custom-slick.css */
+.slick-slider {
+  position: relative;
+}
+
+.slick-prev, .slick-next {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 1;
+  position: absolute;
+  bottom: -50px; /* Position arrows at the bottom */
+  transform: translateY(350%);
+}
+
+.slick-prev {
+  left: calc(50% - 60px); /* Adjust the left position */
+}
+
+.slick-next {
+  right: calc(50% - 60px); /* Adjust the right position */
+}
+
+.slick-dots {
+  display: none !important;
+}

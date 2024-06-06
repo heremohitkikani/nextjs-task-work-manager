@@ -8,13 +8,12 @@ const Footer = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-8 flex flex-col lg:flex-row justify-between items-center">
           <div className="text-center lg:text-left mb-4 lg:mb-0">
-            <h1 className="text-2xl sm:text-3xl font-semibold">
+            <h1 className="text-xl sm:text-3xl font-semibold">
               WELCOME TO WORK MANAGER
             </h1>
             <div className="inline-block text-white">
               <p className="mt-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
-                ab!
+                Add your daily task and manage it with ease.
               </p>
             </div>
           </div>

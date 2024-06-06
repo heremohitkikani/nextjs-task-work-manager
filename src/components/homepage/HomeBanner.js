@@ -9,7 +9,7 @@ import { roboto_Mono } from "@/helper/fonthelper";
 // const poppins = Roboto({ subsets: ["latin"], weight: "400" });
 const BannerSection = () => {
   return (
-    <div className="bg-gradient-to-r from-blue-500 to-blue-700 text-white py-8 md:py-16">
+    <div className="mt-20 bg-gradient-to-r from-blue-500 to-blue-700 text-white py-8 md:py-16">
       <div className="container mx-auto px-4 md:px-0">
         <div className="mx-10 flex flex-col md:flex-row items-center justify-between">
           <div className="md:mr-8 mb-8 md:mb-0">
