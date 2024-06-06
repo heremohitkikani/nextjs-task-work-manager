@@ -30,7 +30,7 @@ const CustomNavbar = () => {
   return (
     <>
       <div className="mb-50">
-        <nav className="bg-blue-600 mb-56 py-4 px-6 sm:px-12 md:px-24 lg:px-36 flex justify-between items-center fixed top-0 left-0 w-full z-10">
+        <nav className="bg-blue-600 text-[15px] mb-56 py-4 px-6 sm:px-12 md:px-24 lg:px-36 flex justify-between items-center fixed top-0 left-0 w-full z-10">
           <div className="brand">
             <h1 className="text-2xl font-semibold text-white">
               <Link href="/"><Image src={logo} alt="logo" width={55} height={50} /></Link>
@@ -109,6 +109,15 @@ const CustomNavbar = () => {
                       SHOW TASKS
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      href="/profile/user"
+                      className="hover:text-blue-200 font-bold"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      PROFILE
+                    </Link>
+                  </li>
                 </>
               )}
             </ul>
@@ -117,7 +126,7 @@ const CustomNavbar = () => {
                 <>
                   <li>
                     <span className="hover:text-blue-200 font-bold">
-                      {context.user.name}
+                      {context.user.name} ..!
                     </span>
                   </li>
                   <li>

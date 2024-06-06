@@ -8,7 +8,7 @@ export default function Profile() {
   console.log(context.user);
 
   return (
-    <div className="p-4 w-[70%] mx-auto text-white bg-gray-800 shadow-lg rounded-lg md:max-w-2xl py-12 md:py-20 my-20">
+    <div className="p-4 mt-40 w-[70%] mx-auto text-white bg-gray-800 shadow-lg rounded-lg md:max-w-2xl py-12 md:py-20 my-20">
       {context.user ? (
         <>
           <h1 className="text-2xl font-bold ">Hello, {context.user.name}</h1>
