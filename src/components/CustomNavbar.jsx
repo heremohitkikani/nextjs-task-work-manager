@@ -117,7 +117,7 @@ const CustomNavbar = () => {
                 <>
                   <li>
                     <span className="hover:text-blue-200 font-bold">
-                      {context.user.name.toUpperCase()}
+                      {context.user.name}
                     </span>
                   </li>
                   <li>
