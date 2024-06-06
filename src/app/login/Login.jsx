@@ -42,7 +42,16 @@ const Login = () => {
       });
     }
   };
-
+  const resetForm = () => {
+    setLoginData({
+      name: "",
+      email: "",
+      password: "",
+      about: "",
+      profileURL:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz1K1evWjMTfR3IMBxQxXSGV2pTaO2rAP7EzIMB4u0YwxfFL4pJ269eff6sNvuxtjI7c4s",
+    });
+  };
   return (
     <>
 
@@ -110,7 +119,7 @@ const Login = () => {
               >
                 Login
               </button>
-              <button
+              <button onClick={resetForm}
                 type="button"
                 className="px-4 py-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors duration-300"
               >
