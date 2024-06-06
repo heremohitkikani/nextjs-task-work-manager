@@ -29,7 +29,7 @@ const CustomNavbar = () => {
 
   return (
     <>
-      <div className="mb-20">
+      <div className="mb-50">
         <nav className="bg-blue-600 mb-56 py-4 px-6 sm:px-12 md:px-24 lg:px-36 flex justify-between items-center fixed top-0 left-0 w-full z-10">
           <div className="brand">
             <h1 className="text-2xl font-semibold text-white">

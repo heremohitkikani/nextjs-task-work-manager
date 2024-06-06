@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
         <UserProvider>
           <ToastContainer />
           <CustomNavbar />
-          <div >{children}</div>
+          <div className="" >{children}</div>
 
           <Footer />
         </UserProvider>
