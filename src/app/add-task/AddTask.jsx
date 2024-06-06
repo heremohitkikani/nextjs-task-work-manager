@@ -38,7 +38,7 @@ const AddTask = () => {
   };
 
   return (
-    <div className="flex mt-20 flex-col items-center justify-center min-h-screen py-10 bg-gray-900 px-4 sm:px-6 lg:px-8">
+    <div className="flex mt-14 flex-col items-center justify-center min-h-screen py-10 bg-gray-900 px-4 sm:px-6 lg:px-8">
       <div className="w-full max-w-lg bg-gray-800 shadow-lg rounded-lg p-6">
         <div className="flex justify-center mb-5">
           <Image src={loginSvg} alt="Login banner" className="w-20 sm:w-24" />

@@ -62,7 +62,7 @@ const Signup = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-10 bg-gray-900 px-4 sm:px-6 lg:px-8"><span className="pb-2 md:hidden ">IF EXISTING ..THEN
+    <div className="flex flex-col mt-20 items-center justify-center min-h-screen py-10 bg-gray-900 px-4 sm:px-6 lg:px-8"><span className="pb-2 md:hidden ">IF EXISTING ..THEN
     <Link 
       href="/login"
       className="md:hover:text-blue-200 text-blue-200 ms-2  font-bold">
