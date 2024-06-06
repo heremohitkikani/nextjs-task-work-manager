@@ -2,10 +2,11 @@
 import React from "react";
 import bannerImage from "../../assets/login.svg";
 import Image from "next/image";
-import { Poppins, Roboto } from "next/font/google";
-import { Waiting_for_the_Sunrise } from "next/font/google";
+import { roboto_Mono } from "@/helper/fonthelper";
+// import { Poppins, Roboto } from "next/font/google";
+// import { Waiting_for_the_Sunrise } from "next/font/google";
 
-const poppins = Roboto({ subsets: ["latin"], weight: "400" });
+// const poppins = Roboto({ subsets: ["latin"], weight: "400" });
 const BannerSection = () => {
   return (
     <div className="bg-gradient-to-r from-blue-500 to-blue-700 text-white py-8 md:py-16">
@@ -15,11 +16,11 @@ const BannerSection = () => {
             <Image
               src={bannerImage}
               alt="Banner"
-              className="w-full max-w-xs md:max-w-md rounded-full"
+              className="md:w-full w-32 max-w-xs md:max-w-md rounded-full"
             />
           </div>
           <div className="text-center md:text-left">
-            <h1 className={`text-3xl md:text-4xl font-bold mb-4  ${poppins.className}`}>
+            <h1 className={`text-3xl md:text-4xl font-bold mb-4  ${roboto_Mono.className}`}>
               Welcome to Task Manager
             </h1>
             <p className="text-lg md:text-xl mb-8 font-poppins">

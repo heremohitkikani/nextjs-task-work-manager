@@ -6,6 +6,7 @@ import React, { useContext, useState } from "react";
 import { toast } from "react-toastify";
 import signUpBanner from "../../assets/singup.svg";
 import Image from "next/image";
+import Link from "next/link";
 const Login = () => {
   const router = useRouter();
   const context = useContext(UserContext);
@@ -43,75 +44,84 @@ const Login = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900">
-      <div className="w-full max-w-md mx-auto bg-gray-800 rounded-lg shadow-lg px-8 py-12">
-        <h1 className="text-3xl text-center text-white mb-8">Login Here</h1>
-        <Image src={signUpBanner} alt="Signup banner" className="w-32 mx-auto sm:w-40" />
+    <>
 
-  
-        <form action="#!" onSubmit={loginFormSubmitted}>
-          <div className="mb-4">
-            <label
-              htmlFor="user_email"
-              className="block text-sm font-medium text-gray-300 mb-2"
-            >
-              Email
-            </label>
-            <input
-              type="email"
-              className="w-full p-3 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-600"
-              placeholder="Enter your email"
-              id="user_email"
-              name="user_email"
-              onChange={(event) => {
-                setLoginData({
-                  ...loginData,
-                  email: event.target.value,
-                });
-              }}
-              value={loginData.email}
-            />
-          </div>
-  
-          <div className="mb-6">
-            <label
-              htmlFor="user_password"
-              className="block text-sm font-medium text-gray-300 mb-2"
-            >
-              Password
-            </label>
-            <input
-              type="password"
-              className="w-full p-3 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-600"
-              placeholder="Enter your password"
-              id="user_password"
-              onChange={(event) => {
-                setLoginData({
-                  ...loginData,
-                  password: event.target.value,
-                });
-              }}
-              value={loginData.password}
-            />
-          </div>
-  
-          <div className="flex justify-between items-center mb-6">
-            <button
-              type="submit"
-              className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300"
-            >
-              Login
-            </button>
-            <button
-              type="button"
-              className="px-4 py-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors duration-300"
-            >
-              Reset
-            </button>
-          </div>
-        </form>
+      <div className="flex flex-col items-center justify-center min-h-screen py-10 bg-gray-900 px-4 sm:px-6 lg:px-8"> <span className="pb-2 md:hidden ">IF NEW ..THEN
+        <Link 
+          href="/signup"
+          className="md:hover:text-blue-200 text-blue-200 ms-2  font-bold">
+           SIGNUP
+        </Link></span>
+        <div className="w-full max-w-md bg-gray-800 shadow-lg rounded-lg p-6">
+          <h1 className="md:text-3xl text-[15px] text-center text-white mb-5">LOGIN HERE . . . ! !</h1>
+          <Image src={signUpBanner} alt="Signup banner" className="w-24 mx-auto sm:w-40" />
+
+
+          <form action="#!" onSubmit={loginFormSubmitted}>
+            <div className="mb-4">
+              <label
+                htmlFor="user_email"
+                className="block text-sm font-medium text-gray-300 mb-2"
+              >
+                Email
+              </label>
+              <input
+                type="email"
+                className="w-full p-3 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-600"
+                placeholder="Enter your email"
+                id="user_email"
+                name="user_email"
+                onChange={(event) => {
+                  setLoginData({
+                    ...loginData,
+                    email: event.target.value,
+                  });
+                }}
+                value={loginData.email}
+              />
+            </div>
+
+            <div className="mb-6">
+              <label
+                htmlFor="user_password"
+                className="block text-sm font-medium text-gray-300 mb-2"
+              >
+                Password
+              </label>
+              <input
+                type="password"
+                className="w-full p-3 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-600"
+                placeholder="Enter your password"
+                id="user_password"
+                onChange={(event) => {
+                  setLoginData({
+                    ...loginData,
+                    password: event.target.value,
+                  });
+                }}
+                value={loginData.password}
+              />
+            </div>
+
+            <div className="flex justify-between items-center mb-6">
+              <button
+                type="submit"
+                className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300"
+              >
+                Login
+              </button>
+              <button
+                type="button"
+                className="px-4 py-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors duration-300"
+              >
+                Reset
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
-    </div>
+
+    </>
   );
 };
 

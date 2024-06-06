@@ -11,9 +11,8 @@ const Task = ({ task, deleteTaskParent }) => {
 
   return (
     <div
-      className={` shadow-lg mt-2 rounded-md ${
-        task.status == "completed" ? "bg-green-800" : "bg-gray-800"
-      }`}
+      className={` shadow-lg mt-2 rounded-md ${task.status == "completed" ? "bg-green-800" : "bg-gray-800"
+        }`}
     >
       <div className="p-5">
         <div className="flex justify-between">

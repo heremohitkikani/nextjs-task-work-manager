@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div>
+    <div className="mt-10">
       {/* banner section  */}
 
       <BannerSection />

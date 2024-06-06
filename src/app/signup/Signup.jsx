@@ -5,6 +5,7 @@ import signUpBanner from "../../assets/singup.svg";
 import Image from "next/image";
 import { toast } from "react-toastify";
 import { signUp } from "@/services/userService";
+import Link from "next/link";
 
 const Signup = () => {
   const [data, setData] = useState({
@@ -61,12 +62,17 @@ const Signup = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-10 bg-gray-900 px-4 sm:px-6 lg:px-8">
+    <div className="flex flex-col items-center justify-center min-h-screen py-10 bg-gray-900 px-4 sm:px-6 lg:px-8"><span className="pb-2 md:hidden ">IF EXISTING ..THEN
+    <Link 
+      href="/login"
+      className="md:hover:text-blue-200 text-blue-200 ms-2  font-bold">
+       LOGIN
+    </Link></span>
       <div className="w-full max-w-md bg-gray-800 shadow-lg rounded-lg p-6">
+        <h1 className="text-xl text-center mb-5 text-[15px]">SIGNUP HERE . . !!</h1>
         <div className="flex justify-center mb-5">
-          <Image src={signUpBanner} alt="Signup banner" className="w-12 sm:w-24" />
+          <Image src={signUpBanner} alt="Signup banner" className="w-24 sm:w-24" />
         </div>
-        <h1 className="text-xl text-center mb-5 text-white">Signup Here</h1>
         <form action="#!" onSubmit={doSignup}>
           {/* Name */}
           <div className="mb-4">
