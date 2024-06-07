@@ -6,8 +6,11 @@ import Image from "next/image";
 import { toast } from "react-toastify";
 import { signUp } from "@/services/userService";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const Signup = () => {
+  const navigate=useRouter()
+
   const [data, setData] = useState({
     name: "",
     email: "",
@@ -35,6 +38,9 @@ const Signup = () => {
       toast.success("User is registered !!", {
         position: "top-center",
       });
+
+      navigate.push("/login");
+
       setData({
         name: "",
         email: "",

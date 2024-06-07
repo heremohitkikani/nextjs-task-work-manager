@@ -11,18 +11,18 @@ const FeatureSection = () => {
         <div className="flex flex-wrap justify-center -mx-4">
           <FeatureCard
             icon={<FiCheckCircle className="text-white w-8 h-8" />}
-            title="Easy Task Management"
-            description="Organize your tasks effortlessly using our intuitive task management system."
+            title="Add Your Tasks"
+            description="You can add your daily routin task using add task section "
           />
           <FeatureCard
             icon={<FiList className="text-white w-8 h-8" />}
             title="Task Categories"
-            description="Categorize your tasks into different categories for better organization."
+            description="you can also add your task status like completed or pending ."
           />
           <FeatureCard
             icon={<FiCalendar className="text-white w-8 h-8" />}
-            title="Due Date Reminders"
-            description="Set due date reminders to stay on top of your tasks and deadlines."
+            title="Delete tasks"
+            description="You can delete your tasks using delete button"
           />
         </div>
       </div>

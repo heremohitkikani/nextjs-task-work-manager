@@ -8,32 +8,32 @@ import "../custom-slick.css"; // Import custom CSS for additional styles
 const testimonials = [
   {
     id: 1,
-    name: "John Doe",
-    designation: "CEO, ABC Inc.",
+    name: "Mohit Kikani",
+    designation: ".",
     message:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed lobortis justo. Proin mollis scelerisque ex.",
+      "Hello! I'm moiht kikani, a dedicated and efficient Full Stack Developer with a robust skill set in the MERN stack and MySQL"
   },
   {
     id: 2,
-    name: "Jane Smith",
-    designation: "Manager, XYZ Corp.",
+    name: "Mohit Kikani",
+    designation: ".",
     message:
-      "Fusce volutpat tortor sit amet massa sagittis, ac iaculis odio congue. Nam maximus vestibulum lorem.",
+      " I specialize in building responsive, scalable web applications that solve complex challenges.",
   },
-  {
-    id: 3,
-    name: "Michael Johnson",
-    designation: "CTO, PQR Ltd.",
-    message:
-      "Nullam non mauris nec arcu posuere fermentum. Aliquam id orci vel elit accumsan gravida.",
-  },
-  {
-    id: 4,
-    name: "Emily Davis",
-    designation: "Designer, LMN Inc.",
-    message:
-      "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
-  },
+  // {
+  //   id: 3,
+  //   name: "Michael Johnson",
+  //   designation: "CTO, PQR Ltd.",
+  //   message:
+  //     "Nullam non mauris nec arcu posuere fermentum. Aliquam id orci vel elit accumsan gravida.",
+  // },
+  // {
+  //   id: 4,
+  //   name: "Emily Davis",
+  //   designation: "Designer, LMN Inc.",
+  //   message:
+  //     "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+  // },
   // Add more testimonials as needed
 ];
 

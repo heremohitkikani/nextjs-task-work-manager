@@ -3,6 +3,7 @@ import React from "react";
 import bannerImage from "../../assets/login.svg";
 import Image from "next/image";
 import { roboto_Mono } from "@/helper/fonthelper";
+import Link from "next/link";
 // import { Poppins, Roboto } from "next/font/google";
 // import { Waiting_for_the_Sunrise } from "next/font/google";
 
@@ -26,14 +27,14 @@ const BannerSection = () => {
             <p className="text-lg md:text-xl mb-8 font-poppins">
               Organize your tasks efficiently with our task manager app.
             </p>
-            <button
+            <Link href="/add-task"> <button
               className="relative bg-white text-blue-500 px-4 py-2 md:px-6 md:py-3 rounded-md shadow-md transition duration-300 hover:bg-blue-500 hover:text-white font-poppins"
               onClick={() => {
                 console.log("Action button clicked!");
               }}
             >
-              Learn More
-            </button>
+              Get Started
+            </button></Link>
           </div>
         </div>
       </div>
